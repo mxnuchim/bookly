@@ -4,9 +4,7 @@ from fastapi.exceptions import HTTPException
 from src.books.schemas import Book, BookUpdate
 from typing import List
 
-
 book_router = APIRouter()
-
 
 @book_router.get('/', response_model=List[Book])
 async def get_all_books() -> dict:
