@@ -1,4 +1,4 @@
-from schemas import Book
+from src.books.schemas import Book
 from typing import List
 
 books: List[Book] = [
